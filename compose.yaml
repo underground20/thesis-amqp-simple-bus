@@ -1,0 +1,13 @@
+services:
+    php:
+        build:
+            context: ./docker/php
+        volumes:
+            - ./:/var/www/app
+        tty: true
+
+    rabbitmq:
+        image: rabbitmq:4-management-alpine
+        ports:
+            - "15672:15672"
+            - "5672:5672"

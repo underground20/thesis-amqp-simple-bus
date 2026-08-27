@@ -1,0 +1,6 @@
+/var/
+/vendor/
+/.php-cs-fixer.php
+/compose.override.yaml
+/phpstan.neon
+/phpunit.xml
